@@ -1,0 +1,17 @@
+{
+  "/_app": "pages/_app.js",
+  "/app/[name]": "pages/app/[name].html",
+  "/blog": "pages/blog.js",
+  "/blog/post/[id]": "pages/blog/post/[id].html",
+  "/blog/tag/[id]": "pages/blog/tag/[id].html",
+  "/blog/user/[id]": "pages/blog/user/[id].html",
+  "/cv/user/[name]": "pages/cv/user/[name].html",
+  "/": "pages/index.js",
+  "/noMatch": "pages/noMatch.html",
+  "/privacyPolicy": "pages/privacyPolicy.html",
+  "/release/[repository]/[id]": "pages/release/[repository]/[id].html",
+  "/releases": "pages/releases.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
