@@ -1,1 +1,0 @@
-{"ast":null,"code":"import axios from 'axios';\nimport { getHeader } from '../components/Utils';\nvar api = axios.create({\n  baseURL: 'https://minecode.herokuapp.com/github/',\n  headers: getHeader()\n});\nexport default api;","map":null,"metadata":{},"sourceType":"module"}
