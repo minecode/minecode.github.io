@@ -96,193 +96,8 @@ module.exports =
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("1TCz");
+module.exports = __webpack_require__("hUgY");
 
-
-/***/ }),
-
-/***/ "1TCz":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
-// EXTERNAL MODULE: ./style/index.scss
-var style = __webpack_require__("JuI/");
-
-// EXTERNAL MODULE: ./style/index.css
-var style_0 = __webpack_require__("GFNa");
-
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__("xnum");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-
-// EXTERNAL MODULE: ./node_modules/next/app.js
-var app = __webpack_require__("8Bbg");
-var app_default = /*#__PURE__*/__webpack_require__.n(app);
-
-// EXTERNAL MODULE: external "next/router"
-var router_ = __webpack_require__("4Q3z");
-
-// CONCATENATED MODULE: ./components/Navbar.js
-
-
-
-
-function Navbar() {
-  const {
-    0: path,
-    1: setPath
-  } = Object(external_react_["useState"])(null);
-  let location = Object(router_["useRouter"])();
-  Object(external_react_["useEffect"])(() => {
-    setPath(location.pathname);
-  }, [location.pathname]);
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("nav", {
-    className: "navbar navbar-expand-lg navbar-dark bg-dark fixed-top",
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-      className: "container",
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
-        className: "navbar-brand",
-        href: "/",
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          src: "/images/logo.png",
-          width: "30",
-          height: "30",
-          alt: ""
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-          children: " Minecode"
-        })]
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
-        className: "navbar-toggler",
-        type: "button",
-        "data-toggle": "collapse",
-        "data-target": "#navbarResponsive",
-        "aria-controls": "navbarResponsive",
-        "aria-expanded": "false",
-        "aria-label": "Toggle navigation",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
-          className: "navbar-toggler-icon"
-        })
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-        className: "collapse navbar-collapse",
-        id: "navbarResponsive",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("ul", {
-          className: "navbar-nav ml-auto",
-          children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-            className: path && path === '/' ? 'nav-item active' : 'nav-item',
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-              className: "nav-link",
-              href: "/",
-              children: "Home"
-            })
-          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-            className: path && path.includes('/blog') ? 'nav-item active' : 'nav-item',
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-              className: "nav-link",
-              href: "/blog",
-              children: "Blog"
-            })
-          }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("li", {
-            className: path && path.includes('/release') ? 'nav-item active' : 'nav-item',
-            children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-              className: "nav-link",
-              href: "/releases",
-              children: "Releases"
-            })
-          })]
-        })
-      })]
-    })
-  });
-}
-// CONCATENATED MODULE: ./components/Footer.js
-
-
-
-function Footer() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("footer", {
-    className: "py-5 bg-dark",
-    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-      className: "container",
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
-        className: "m-0 text-center text-white",
-        children: "Copyright \xA9 Minecode 2020"
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
-        className: "text-center mt-2",
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
-          href: "http://www.freepik.com",
-          children: "Designed by slidesgo, stories and macrovector / Freepik"
-        })
-      })]
-    })
-  });
-}
-// CONCATENATED MODULE: ./components/Layout.js
-
-
-
-
-
-
-const Layout = props => /*#__PURE__*/Object(jsx_runtime_["jsxs"])(jsx_runtime_["Fragment"], {
-  children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("main", {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Navbar, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: "content",
-      children: props.children
-    })]
-  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Footer, {})]
-});
-
-/* harmony default export */ var components_Layout = (Layout);
-// CONCATENATED MODULE: ./pages/_app.js
-
-
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-
-class _app_MyApp extends app_default.a {
-  render() {
-    const {
-      Component,
-      pageProps
-    } = this.props;
-    return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(jsx_runtime_["Fragment"], {
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
-          children: "Minecode"
-        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
-          name: "viewport",
-          content: "initial-scale=1.0, width=device-width"
-        })]
-      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_Layout, {
-        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Component, _objectSpread({}, pageProps))
-      })]
-    });
-  }
-
-}
-
-/* harmony default export */ var _app = __webpack_exports__["default"] = (_app_MyApp);
 
 /***/ }),
 
@@ -446,20 +261,6 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
-/***/ "GFNa":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "JuI/":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "cDcd":
 /***/ (function(module, exports) {
 
@@ -467,10 +268,181 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "hUgY":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__("F5FC");
+
+// EXTERNAL MODULE: ./src/style/index.scss
+var style = __webpack_require__("jh8G");
+
+// EXTERNAL MODULE: ./src/style/index.css
+var src_style = __webpack_require__("spug");
+
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__("cDcd");
+
+// EXTERNAL MODULE: ./node_modules/next/app.js
+var app = __webpack_require__("8Bbg");
+var app_default = /*#__PURE__*/__webpack_require__.n(app);
+
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__("4Q3z");
+
+// CONCATENATED MODULE: ./src/components/Navbar.js
+
+
+
+
+function Navbar() {
+  const {
+    0: path,
+    1: setPath
+  } = Object(external_react_["useState"])(null);
+  let location = Object(router_["useRouter"])();
+  Object(external_react_["useEffect"])(() => {
+    setPath(location.pathname);
+  }, [location.pathname]);
+  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("nav", {
+    className: "navbar navbar-expand-lg navbar-dark bg-dark fixed-top",
+    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      className: "container",
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("a", {
+        className: "navbar-brand",
+        href: "/",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
+          src: "/images/logo.png",
+          width: "30",
+          height: "30",
+          alt: ""
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+          children: " Minecode"
+        })]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
+        className: "navbar-toggler",
+        type: "button",
+        "data-toggle": "collapse",
+        "data-target": "#navbarResponsive",
+        "aria-controls": "navbarResponsive",
+        "aria-expanded": "false",
+        "aria-label": "Toggle navigation",
+        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("span", {
+          className: "navbar-toggler-icon"
+        })
+      })]
+    })
+  });
+}
+// CONCATENATED MODULE: ./src/components/Footer.js
+
+
+
+function Footer() {
+  return /*#__PURE__*/Object(jsx_runtime_["jsx"])("footer", {
+    className: "py-5 bg-dark",
+    children: /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+      className: "container",
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+        className: "m-0 text-center text-white",
+        children: "Copyright \xA9 Minecode 2020"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+        className: "text-center mt-2",
+        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          href: "http://www.freepik.com",
+          children: "Designed by slidesgo, stories and macrovector / Freepik"
+        })
+      })]
+    })
+  });
+}
+// CONCATENATED MODULE: ./src/components/Layout.js
+
+
+
+
+
+
+const Layout = props => /*#__PURE__*/Object(jsx_runtime_["jsxs"])(jsx_runtime_["Fragment"], {
+  children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("main", {
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Navbar, {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+      className: "content",
+      children: props.children
+    })]
+  }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Footer, {})]
+});
+
+/* harmony default export */ var components_Layout = (Layout);
+// CONCATENATED MODULE: ./src/pages/_app.tsx
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+
+class _app_MyApp extends app_default.a {
+  render() {
+    const {
+      Component,
+      pageProps
+    } = this.props;
+    return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(jsx_runtime_["Fragment"], {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+          children: "Minecode"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+          name: "viewport",
+          content: "initial-scale=1.0, width=device-width"
+        })]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_Layout, {
+        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(Component, _objectSpread({}, pageProps))
+      })]
+    });
+  }
+
+}
+
+/* harmony default export */ var _app = __webpack_exports__["default"] = (_app_MyApp);
+
+/***/ }),
+
+/***/ "jh8G":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "kYf9":
 /***/ (function(module, exports) {
 
 module.exports = require("next/dist/next-server/lib/utils.js");
+
+/***/ }),
+
+/***/ "spug":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 

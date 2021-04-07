@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -121,14 +121,6 @@ const cancelIdleCallback = typeof self !== 'undefined' && self.cancelIdleCallbac
 };
 
 exports.cancelIdleCallback = cancelIdleCallback;
-
-/***/ }),
-
-/***/ 13:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("VDXt");
-
 
 /***/ }),
 
@@ -421,6 +413,14 @@ function _interopRequireWildcard(obj) {
 }
 
 module.exports = _interopRequireWildcard;
+
+/***/ }),
+
+/***/ 8:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("VDXt");
+
 
 /***/ }),
 
@@ -1034,7 +1034,7 @@ class Head extends _react.Component {
         }
 
         if (badProp) {
-          console.warn(`Found conflicting amp tag "${child.type}" with conflicting prop ${badProp} in ${__NEXT_DATA__.page}. https://err.sh/next.js/conflicting-amp-tag`);
+          console.warn(`Found conflicting amp tag "${child.type}" with conflicting prop ${badProp} in ${__NEXT_DATA__.page}. https://nextjs.org/docs/messages/conflicting-amp-tag`);
           return null;
         }
       } else {
@@ -1244,7 +1244,7 @@ class NextScript extends _react.Component {
       return (0, _htmlescape.htmlEscapeJsonString)(data);
     } catch (err) {
       if (err.message.indexOf('circular structure')) {
-        throw new Error(`Circular structure in "getInitialProps" result of page "${__NEXT_DATA__.page}". https://err.sh/vercel/next.js/circular-structure`);
+        throw new Error(`Circular structure in "getInitialProps" result of page "${__NEXT_DATA__.page}". https://nextjs.org/docs/messages/circular-structure`);
       }
 
       throw err;
